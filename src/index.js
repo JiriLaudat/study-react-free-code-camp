@@ -1,9 +1,9 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-import MyInfo from "./components/MyInfo" // no need to write '.js', need to write './' 
+import App from "./App"
 
 ReactDOM.render(
-  <MyInfo />,
+  <App />,
   document.getElementById('root')
   )
