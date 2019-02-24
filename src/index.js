@@ -1,17 +1,9 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-function MyApp() {
-  return (
-    <ul>
-      <li>ham</li>
-      <li>cheese</li>
-      <li>bread</li>
-      <li>salad</li>
-  </ul>
-  )
-}
+import MyInfo from "./MyInfo" // no need to write '.js', need to write './' 
 
-ReactDOM.render( 
-  <MyApp />,
-  document.getElementById('root'))
+ReactDOM.render(
+  <MyInfo />,
+  document.getElementById('root')
+  )
