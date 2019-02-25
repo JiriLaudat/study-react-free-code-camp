@@ -1,5 +1,6 @@
 import React from "react"
-import Header from "./components/Header.js"
+import Header from "./components/Header"
+import TodoItem from "./components/TodoItem"
 
 function App() {
     return (
@@ -7,21 +8,13 @@ function App() {
 
             <Header />
 
-            <form>
-
-                <input type="checkbox" />
-                <p>option 1</p>
-
-                <input type="checkbox"/>
-                <p className="input">option 2</p>
-
-                <input type="checkbox" />
-                <p>option 3</p>
-
-                <input type="checkbox" />
-                <p>option 4</p>
-
-                </form>
+            <div className="todo-list">
+                <TodoItem />
+                <TodoItem />
+                <TodoItem />
+                <TodoItem />
+                <TodoItem />
+            </div>
         </div>
     )
 }
