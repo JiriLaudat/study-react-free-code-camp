@@ -1,5 +1,10 @@
-import React from "react"
+import React from "react";
 
-const Header = () => <h1 className="header">Hello World!</h1>
+const Header = () => {
+    const name = "John";
+    return (
+        <h1 className="header">Hello {name + ' Smith'}!</h1>
+        )
+    }
 
 export default Header
