@@ -1,22 +1,28 @@
 import React from "react"
+import Header from "./components/Header.js"
 
 function App() {
     return (
-        <form>
+        <div>
 
-            <input type="checkbox" />
-            <p>option 1</p>
+            <Header />
 
-            <input type="checkbox" />
-            <p>option 2</p>
+            <form>
 
-            <input type="checkbox" />
-            <p>option 3</p>
+                <input type="checkbox" />
+                <p>option 1</p>
 
-            <input type="checkbox" />
-            <p>option 4</p>
-            
-        </form>
+                <input type="checkbox"/>
+                <p className="input">option 2</p>
+
+                <input type="checkbox" />
+                <p>option 3</p>
+
+                <input type="checkbox" />
+                <p>option 4</p>
+
+                </form>
+        </div>
     )
 }
 
