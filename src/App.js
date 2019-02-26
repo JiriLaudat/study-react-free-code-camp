@@ -41,6 +41,11 @@ function App() {
                 phone="(212) 555-4567"
                 email="thecat@hotmail.com"
             />
+
+            <ContactCard
+                name="Eugen"
+                imgUrl="http://placekitten.com/200/100"
+            />
         </div>
     )
 }

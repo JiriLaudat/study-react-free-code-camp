@@ -5,8 +5,8 @@ const ContactCard = (props) => {
         <div classname="contact-card">
             <img src={props.imgUrl}/>
             <h3>{props.name}</h3>
-            <p>{props.phone}</p>
-            <p>{props.email}</p>
+            <p style={{ display: !props.phone && 'none' }}>Phone: {props.phone}</p>
+            <p style={{ display: !props.phone && 'none' }}>Email: {props.email}</p>
         </div>
     )
 }
