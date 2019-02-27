@@ -2,8 +2,21 @@ import React from "react";
 import Header from "./components/Header";
 import TodoItem from "./components/TodoItem";
 import ContactCard from "./components/ContactCard";
+import Product from "./components/Product";
+import productsData from "./data/productsData";
 
 function App() {
+    const productComponents = productsData.map(product => {
+        return (
+            <Product 
+                key={product.id}
+                name={product.name}
+                price={product.price}
+                description={product.description}
+            />
+        )
+    })
+
     return (
         <div>
 
@@ -16,6 +29,8 @@ function App() {
                 <TodoItem />
                 <TodoItem />
             </div>
+
+            {productComponents}
 
             <ContactCard
                 name="Mr. Whiskerson"
